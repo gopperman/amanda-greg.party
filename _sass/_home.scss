@@ -1,5 +1,18 @@
 $module: 'home';
 
 .#{$module} {
-	background: red;
+	&__header {
+		background: url(img/chuglife.jpg) no-repeat center center fixed,linear-gradient(45deg,#999,#666);
+ 		background-blend-mode: multiply, multiply;
+ 		background-size: cover, cover;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+ 		color: $white;
+		text-align: center;
+		width: 100vw;
+		height: 90vh;
+	}
 }
