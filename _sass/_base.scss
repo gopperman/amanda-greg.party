@@ -1,6 +1,14 @@
 @import "variables";
 @import "home";
 
+body {
+	background: url(img/chuglife.jpg) no-repeat center center fixed,linear-gradient(45deg,#999,#666);
+	background-blend-mode: multiply, multiply;
+	background-size: cover, cover;
+
+	padding: 70vh 20px 20vh;
+
+}
 .page-content {
 	padding: 0;
 }
@@ -9,4 +17,17 @@
 	display: none;
 	position: fixed;
 	top: 0;
+}
+
+.text {
+	&__center {
+		text-align: center;
+	}
+}
+
+.sans {
+	font-family: 'Open Sans', sans-serif;
+}
+.sacramento {
+	font-family: 'Sacramento', cursive;
 }

@@ -1,17 +1,21 @@
-<div class="std-form__container">
-	<h2>Save the Date</h2>
-	<p>Save the Dates will be sent out shortly. If you'd like one, please send us your address at your earliest convenience.</p>
+<div class="std-form__container sans">
+	<h2>Help!</h2>
+	<p class="text__center">We need your address. Fill out this form, ok?</p>
 	<form action="https://getform.org/f/6f2bb205-6746-43ac-807d-26a5d7ec2387" method="POST">
-		<section class="col-xs-12">
-			<p><label class="col-xs-6" for="std-form__name">Name</label></p>
-			<p><input class="col-xs-6" type="text" name="name" id="std-form__name" placeholder="Dominic Toretto"></input></p>
+		<section class="row">
+			<p class="col-sm-3"><label for="std-form__name">Name</label></p>
+			<p class="col-sm-9" ><input type="text" name="name" id="std-form__name" placeholder="Dominic Toretto"></input></p>
 		</section>
-		<section class="col-xs-12">
-			<p><label class="col-xs-6" for="std=std-form__address">Address</label></p>
-			<p><textarea class="col-xs-6" id="std-form__address" name="address"></textarea></p>
+		<section class="row">
+			<p class="col-sm-3"><label for="std-form__name">Email</label></p>
+			<p class="col-sm-9" ><input type="text" name="email" id="std-form__name" placeholder="fastnfurious@hotmail.com"></input></p>
 		</section>
-		<section class="col-xs-12">
-			<button type="submit">Submit</button>
+		<section class="row">
+			<p class="col-sm-3"><label for="std=std-form__address">Address</label></p>
+			<p class="col-sm-9"><textarea id="std-form__address" name="address"></textarea></p>
+		</section>
+		<section class="row">
+			<p class="col-sm-9 col-sm-push-3 std-form__submit--container"><button type="submit">Submit</button></p>
 		</section>
 	</form>
 </div>

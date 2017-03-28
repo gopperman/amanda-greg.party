@@ -6262,17 +6262,33 @@ pre {
 /**
  * Colors
  */
-.home__header {
+.home {
+  /** Temporary garbage */ }
+  .home__header {
+    /*		background: url(img/chuglife.jpg) no-repeat center center fixed,linear-gradient(45deg,#999,#666);
+     		background-blend-mode: multiply, multiply;
+     		background-size: cover, cover;
+    
+    		display: flex;
+    		flex-direction: column;
+    		justify-content: center;
+    		width: 100vw;
+    		height: 90vh;*/
+    color: #fff;
+    text-align: center; }
+  .home h1 {
+    margin: -35vh 0 40vh;
+    font-size: 80px; }
+  .home .container-fluid {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px; }
+
+body {
   background: url(img/chuglife.jpg) no-repeat center center fixed, linear-gradient(45deg, #999, #666);
   background-blend-mode: multiply, multiply;
   background-size: cover, cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
-  width: 100vw;
-  height: 90vh; }
+  padding: 70vh 20px 20vh; }
 
 .page-content {
   padding: 0; }
@@ -6281,3 +6297,50 @@ pre {
   display: none;
   position: fixed;
   top: 0; }
+
+.text__center {
+  text-align: center; }
+
+.sans {
+  font-family: 'Open Sans', sans-serif; }
+
+.sacramento {
+  font-family: 'Sacramento', cursive; }
+
+.std-form__container {
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 30px;
+  width: 100%; }
+  .std-form__container h2 {
+    text-align: center; }
+  .std-form__container form {
+    margin-top: 4rem; }
+  .std-form__container label {
+    text-align: right;
+    width: 100%;
+    color: #06677F; }
+  .std-form__container input, .std-form__container textarea {
+    background: transparent;
+    width: 100%; }
+  .std-form__container input {
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #06677F;
+    color: #04404e; }
+  .std-form__container textarea {
+    border: 2px solid #06677F;
+    color: #04404e;
+    height: 95px;
+    padding: 8px; }
+.std-form__submit--container button {
+  border: 0;
+  background: #06677F;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 8px 0;
+  text-transform: uppercase;
+  width: 100%; }
+  .std-form__submit--container button:hover, .std-form__submit--container button:active, .std-form__submit--container button:focus {
+    background: #0bb6e0; }
