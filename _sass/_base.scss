@@ -17,6 +17,19 @@ h2 {
 	margin-bottom: 50px;
 }
 
+a, a:visited {
+	color: $orange;
+	border-bottom: 1px solid $orange;
+	text-decoration: none;
+	transition: all, .2s;
+
+	&:hover, a:focus, a:active{ 
+		color: $red;
+		border-bottom: 1px solid $red;
+		text-decoration: none;
+	}
+}
+
 .container-fluid {
 	max-width: 1000px;
 }

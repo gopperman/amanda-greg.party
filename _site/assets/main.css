@@ -6286,6 +6286,16 @@ ul {
 h2 {
   margin-bottom: 50px; }
 
+a, a:visited {
+  color: #963212;
+  border-bottom: 1px solid #963212;
+  text-decoration: none;
+  transition: all, .2s; }
+  a:hover, a a:focus, a a:active, a:visited:hover, a:visited a:focus, a:visited a:active {
+    color: #791D00;
+    border-bottom: 1px solid #791D00;
+    text-decoration: none; }
+
 .container-fluid {
   max-width: 1000px; }
 
