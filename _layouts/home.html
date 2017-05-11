@@ -3,14 +3,25 @@ layout: default
 ---
 
 <div class="home">
-  <div class="home__header">
-    <div class="center-vertical">
-      <!--Mill St Logo-->
-      <h1 class="sacramento">{{ site.title | escape }}</h1>
-      <!--<h2>{{ site.date | escape }}</h2>-->
-    </div>
-  </div>
-  <main class="container-fluid">
-    {% include form-std.html %}
+  <main>
+    {% include home-header.html %}
+    {% include schedule.html %}
+    {% include logistics.html %}
   </main>
+ <!-- <main class="container-fluid">
+    <div id="invitation-2">
+      <div class="invitation__text">
+        <p>You are cordially invited...</p>
+        <p>Greg Opperman<br />&amp;<br />Amanda Kidd Schall</p>
+        <p>on</p>
+        <p>Saturday, September the 16<sup>th</sup>, 2017</p>
+        <p>At the Mill Street Yacht Club</p>
+        <p class="small">(our Home)</p>
+        <p>514 Mill Street</p>
+        <p>Worcester, Massachussetts</p>
+      </div>
+    </div>
+  </main>-->
+
+  {% include footer.html %}
 </div>

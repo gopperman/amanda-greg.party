@@ -2,7 +2,7 @@ $module: 'home';
 
 .#{$module} {
 	&__header {
-/*		background: url(img/chuglife.jpg) no-repeat center center fixed,linear-gradient(45deg,#999,#666);
+		background: url(img/engagement.jpg) no-repeat center center fixed,linear-gradient(45deg,#999,#666);
  		background-blend-mode: multiply, multiply;
  		background-size: cover, cover;
 
@@ -10,20 +10,13 @@ $module: 'home';
 		flex-direction: column;
 		justify-content: center;
 		width: 100vw;
-		height: 90vh;*/
+		height: 95vh;
 
  		color: $white;
 		text-align: center;
-	}
-	/** Temporary garbage */
-	h1 {
-		margin: -35vh 0 40vh;
-		font-size: 80px;
-	}
 
-	.container-fluid {
-		max-width: 600px;
-		background: rgba(255,255,255,.9);
-		border-radius: 20px;
+		h1 {
+			font-size: 5em;
+		}
 	}
 }

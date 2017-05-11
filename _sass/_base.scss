@@ -2,13 +2,25 @@
 @import "home";
 
 body {
-	background: url(img/chuglife.jpg) no-repeat center center fixed,linear-gradient(45deg,#999,#666);
-	background-blend-mode: multiply, multiply;
-	background-size: cover, cover;
-
-	padding: 70vh 20px 20vh;
-
+//	background: url(img/chuglife.jpg) no-repeat center center fixed,linear-gradient(45deg,#999,#666);
+//	background-blend-mode: multiply, multiply;
+//	background-size: cover, cover;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 }
+
+ul {
+	margin: 0;
+}
+
+h2 {
+	margin-bottom: 50px;
+}
+
+.container-fluid {
+	max-width: 1000px;
+}
+
 .page-content {
 	padding: 0;
 }
@@ -19,10 +31,115 @@ body {
 	top: 0;
 }
 
+.schedule {
+	background: $purple;
+	color: $white;
+	padding: 50px 0;
+
+	&__hed {
+		text-align: center;
+		margin-bottom: 50px;
+		&:before {
+			content: "";
+			padding-bottom: 50px;
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			width: 700px;
+			border-top: 6px double $white;
+		}
+	}
+
+	.row {
+		margin: 25px 0;
+
+		&:last-child {
+			margin-bottom: 0;
+			&:after {
+				padding-top: 50px;
+				display: block;
+				margin: 0 auto;
+				max-width: 100%;
+				width: 700px;
+				border-bottom: 6px double $white;
+			}
+		}
+	}
+
+	.col-sm-6 {
+		padding: 0 30px;
+	}
+
+	h2 {
+		margin: 0 0 .2em;
+	}
+
+	h3 {
+		font-size: 1.4em;
+	}
+}
+
+.logistics {
+	margin: 50px 0;
+	text-align: center;
+	color: darken($green, 5%);
+
+	&__list {
+		text-align: left;
+
+		li {
+			margin: .75rem 0;
+		}
+	}
+
+	.col-sm-4 {
+		padding: 0 25px;
+	}
+
+	h3 {
+		font-size: 6rem;
+		margin-bottom: 3rem;
+	}
+}
+.footer {
+	border-top: 1px solid $green;
+	background: $darkgreen;
+	color: $white;
+
+	&__image {
+		background: url(img/chuglife.jpg) no-repeat center center fixed,linear-gradient(45deg,#999,#666);
+		background-blend-mode: multiply, multiply;
+		background-size: cover, cover;
+		height: 67vw;
+		position: relative;
+		text-align: center;
+		width: 100vw;
+
+		h2 {
+			font-size: 5em;
+			font-size: 12vw;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+		}
+	}
+
+	p { 
+		color: $green-gray;
+		margin: 0;
+		padding: 6px 40px;
+	}
+}
+
 .text {
 	&__center {
 		text-align: center;
 	}
+}
+
+.gray {
+	color: $gray;
 }
 
 .sans {
@@ -30,4 +147,16 @@ body {
 }
 .sacramento {
 	font-family: 'Sacramento', cursive;
+}
+
+ul {
+	list-style-type: none;
+}
+
+@media screen and (min-width:768px) {
+	.schedule {
+		&__day {
+			text-align: right;
+		}
+	}
 }

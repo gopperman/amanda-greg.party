@@ -6262,33 +6262,32 @@ pre {
 /**
  * Colors
  */
-.home {
-  /** Temporary garbage */ }
-  .home__header {
-    /*		background: url(img/chuglife.jpg) no-repeat center center fixed,linear-gradient(45deg,#999,#666);
-     		background-blend-mode: multiply, multiply;
-     		background-size: cover, cover;
-    
-    		display: flex;
-    		flex-direction: column;
-    		justify-content: center;
-    		width: 100vw;
-    		height: 90vh;*/
-    color: #fff;
-    text-align: center; }
-  .home h1 {
-    margin: -35vh 0 40vh;
-    font-size: 80px; }
-  .home .container-fluid {
-    max-width: 600px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 20px; }
-
-body {
-  background: url(img/chuglife.jpg) no-repeat center center fixed, linear-gradient(45deg, #999, #666);
+.home__header {
+  background: url(img/engagement.jpg) no-repeat center center fixed, linear-gradient(45deg, #999, #666);
   background-blend-mode: multiply, multiply;
   background-size: cover, cover;
-  padding: 70vh 20px 20vh; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 95vh;
+  color: #fff;
+  text-align: center; }
+  .home__header h1 {
+    font-size: 5em; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+
+ul {
+  margin: 0; }
+
+h2 {
+  margin-bottom: 50px; }
+
+.container-fluid {
+  max-width: 1000px; }
 
 .page-content {
   padding: 0; }
@@ -6298,8 +6297,82 @@ body {
   position: fixed;
   top: 0; }
 
+.schedule {
+  background: #614C61;
+  color: #fff;
+  padding: 50px 0; }
+  .schedule__hed {
+    text-align: center;
+    margin-bottom: 50px; }
+    .schedule__hed:before {
+      content: "";
+      padding-bottom: 50px;
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      width: 700px;
+      border-top: 6px double #fff; }
+  .schedule .row {
+    margin: 25px 0; }
+    .schedule .row:last-child {
+      margin-bottom: 0; }
+      .schedule .row:last-child:after {
+        padding-top: 50px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 700px;
+        border-bottom: 6px double #fff; }
+  .schedule .col-sm-6 {
+    padding: 0 30px; }
+  .schedule h2 {
+    margin: 0 0 .2em; }
+  .schedule h3 {
+    font-size: 1.4em; }
+
+.logistics {
+  margin: 50px 0;
+  text-align: center;
+  color: #304542; }
+  .logistics__list {
+    text-align: left; }
+    .logistics__list li {
+      margin: .75rem 0; }
+  .logistics .col-sm-4 {
+    padding: 0 25px; }
+  .logistics h3 {
+    font-size: 6rem;
+    margin-bottom: 3rem; }
+
+.footer {
+  border-top: 1px solid #3A5450;
+  background: #283A38;
+  color: #fff; }
+  .footer__image {
+    background: url(img/chuglife.jpg) no-repeat center center fixed, linear-gradient(45deg, #999, #666);
+    background-blend-mode: multiply, multiply;
+    background-size: cover, cover;
+    height: 67vw;
+    position: relative;
+    text-align: center;
+    width: 100vw; }
+    .footer__image h2 {
+      font-size: 5em;
+      font-size: 12vw;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%; }
+  .footer p {
+    color: #7FA09B;
+    margin: 0;
+    padding: 6px 40px; }
+
 .text__center {
   text-align: center; }
+
+.gray {
+  color: #43615C; }
 
 .sans {
   font-family: 'Open Sans', sans-serif; }
@@ -6307,6 +6380,12 @@ body {
 .sacramento {
   font-family: 'Sacramento', cursive; }
 
+ul {
+  list-style-type: none; }
+
+@media screen and (min-width: 768px) {
+  .schedule__day {
+    text-align: right; } }
 .std-form__container {
   border-radius: 5px;
   display: inline-block;
