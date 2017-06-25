@@ -1,0 +1,101 @@
+.invitation {
+	padding: 100px 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: #555;
+
+	&__graph {
+		margin: 0;
+		letter-spacing: 1.5px;
+	}
+
+	&__who {
+		margin: .8em 0 1em;
+
+		.small {
+			font-size: 2em;
+		}
+	}
+
+	&__anno {
+		color: $gray;
+		font-size: .6em;
+		margin-bottom: .5em;
+
+	}
+
+	&__location {
+		font-size: .8em;
+		margin: 1.5em 0 0;
+	}
+
+	&__name {
+		font-size: 3.4em;
+		margin: 0;
+		text-transform: none;
+
+		&.amanda {
+			//margin-top: -.2em;
+		}
+	}
+	.small {
+		margin: 0;
+	}
+}
+
+.rsvp {
+	letter-spacing: 1.5px;
+	margin: 0 auto;
+	max-width: 500px;
+
+	h2 {
+		font-size: 2.5em;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	input[type="text"] {
+		background: transparent;
+		border: 0;
+		border-bottom: 2px solid $black;
+		width: 100%;
+		&:active, &:focus {
+			outline: none;
+		}
+	}
+
+	input[type="radio"] {
+		margin-right: 5px;
+	}
+
+	&__feedback {
+		font-size: .8em;
+		font-style: italic;
+		text-align: center;
+		margin: 40px auto 60px;
+	}
+
+	&__email-container {
+		margin-top: 2em;
+	}
+
+	&__submit--container {
+		& button {
+			background: $white;
+			border: 2px solid $green;
+			color: $green;
+			margin-top: 1.6em;
+			padding: 8px 32px;
+			width: 100%;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			font-weight: bold;
+			transition: all, .2s;
+
+			&:hover, &:active, &:focus {
+				//border: 2px solid lighten($green-gray, 20%);
+				background: lighten($green-gray, 30%);
+			}
+		}
+	}
+}

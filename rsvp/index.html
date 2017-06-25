@@ -4,4 +4,19 @@ permalink: /rsvp
 layout: page
 ---
 
-Hello!
+{% include home-header.html %}
+
+<main class="container-fluid">
+	{% include invitation.html %}
+
+	{%include rsvp-1.html %}
+			<section class="row">
+				<p class="col-sm-3">
+					<label for="rsvp__guest">Guest <span class="small">(opt.)</span></label>
+				</p>
+				<p class="col-sm-9" >
+					<input type="text" name="guest" id="rsvp__guest"></input>
+				</p>
+			</section>
+	{%include rsvp-2.html %}
+</main>
