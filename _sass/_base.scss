@@ -94,6 +94,31 @@ a, a:visited {
 	}
 }
 
+.button {
+	color: $white;
+	background: $purple;
+	padding: 8px 16px;
+	border-radius: 4px;
+
+	&:hover, &:active, &:focus {
+		color: $white;
+		background: lighten($purple, 15%);
+	}
+}
+
+.registry {
+	text-align: center;
+	padding: 25px 0 50px;
+
+	h2 {
+		margin-bottom: 0
+	}
+
+	p {
+		margin: 1em 0;
+	}
+}
+
 .logistics {
 	margin: 50px 0;
 	text-align: center;
