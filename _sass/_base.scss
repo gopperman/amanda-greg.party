@@ -100,7 +100,7 @@ a, a:visited {
 	padding: 8px 16px;
 	border-radius: 4px;
 
-	&:hover, &:active, &:focus {
+	&:hover, &:active, &:focus, &:visited {
 		color: $white;
 		background: lighten($purple, 15%);
 	}
