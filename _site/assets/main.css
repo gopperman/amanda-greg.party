@@ -6414,7 +6414,7 @@ a, a:visited {
   background: #614C61;
   padding: 8px 16px;
   border-radius: 4px; }
-  .button:hover, .button:active, .button:focus {
+  .button:hover, .button:active, .button:focus, .button:visited {
     color: #fff;
     background: #8c6e8c; }
 
